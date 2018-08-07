@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="102dp"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/board_item_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="#882233"
+        />
+    <TextView
+        android:id="@+id/board_item_id"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/board_item_profile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#000000"
+        android:text="aaaaaaa"
+        />
+    <RelativeLayout
+        android:layout_toRightOf="@+id/board_item_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/board_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="aaaaaaa"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:id="@+id/board_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="dsdsds"
+                    android:textColor="#000000"
+                    android:layout_alignParentRight="true"
+                    android:textSize="13sp"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/board_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="#808080"
+                android:text="1212121212"
+                android:layout_weight="4"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        />
+
+</RelativeLayout>
