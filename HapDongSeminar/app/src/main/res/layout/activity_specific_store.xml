@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.SpecificStore.SpecificStoreActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/specific_store_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#19BC9B">
+
+        <ImageView
+            android:id="@+id/specific_store_back_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:id="@+id/specific_store_toolbar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가게이름"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+
+
+        <ImageView
+            android:id="@+id/specific_store_bookmark_btn"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/like"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/specific_store_tab"
+        android:layout_below="@+id/specific_store_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:tabIndicatorColor="#ffffff"
+        app:tabTextColor="#ffffff"
+        app:tabSelectedTextColor="#ffffff"
+        android:background="#19BC9B"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/specific_store_viewpager"
+        android:layout_below="@+id/specific_store_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+</RelativeLayout>

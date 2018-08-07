@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dish_list_item_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/pizza"/>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/dish_list_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/dish_list_item_store_name"
+        android:layout_toRightOf="@+id/dish_list_item_image"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="밥 해주는 남자"/>
+
+    <LinearLayout
+        android:id="@+id/dish_list_linear"
+        android:layout_toRightOf="@+id/dish_list_item_image"
+        android:layout_below="@+id/dish_list_item_store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dish_list_item_store_idx"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF838282"
+            android:text="1"/>
+
+
+        <TextView
+            android:id="@+id/dish_list_item_store_content"
+            android:textColor="#FF838282"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="너무너무 맛있네요~"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/next"/>
+
+</RelativeLayout>

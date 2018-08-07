@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Register.RegisterDishActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/register_dish_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#19BC9B">
+
+        <ImageView
+            android:id="@+id/register_dish_back_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:id="@+id/register_dish_toolbar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록하기"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+
+
+        <ImageView
+            android:id="@+id/register_dish_plus_btn"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/plus"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_below="@+id/register_dish_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="분류"
+                android:textSize="20sp"
+                android:layout_marginLeft="33dp"/>
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/registerCategory"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="내용을 입력해주세요."
+                android:paddingLeft="10dp"
+                android:background="@drawable/textview_background"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가게 이름"
+                android:textSize="20sp"
+                android:layout_marginLeft="33dp"/>
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/registerStoreName"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="내용을 입력해주세요."
+                android:paddingLeft="10dp"
+                android:background="@drawable/textview_background"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가게 설명"
+                android:textSize="20sp"
+                android:layout_marginLeft="33dp"/>
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/registerStoreExplain"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:gravity="top"
+                android:paddingTop="10dp"
+                android:hint="가게 설명"
+                android:paddingLeft="10dp"
+                android:background="@drawable/textview_background"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사진"
+                android:textSize="20sp"
+                android:layout_marginLeft="33dp"/>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/registerPhoto"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:background="#FF8B8E8C"
+                    android:scaleType="fitXY"
+                    android:text="사진"/>
+
+
+                <TextView
+                    android:id="@+id/registerTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사진"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"/>
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="메뉴 설명"
+                android:textSize="20sp"
+                android:layout_marginLeft="33dp"/>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center">
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/registerMenuName"
+                    android:layout_weight="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:hint="항목 입력"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_background"/>
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/registerMenuPrice"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:hint="항목 입력"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/textview_background"/>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="내용 추가"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:background="@drawable/textview_background"/>
+
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/registerBtn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="등록"
+                    android:textColor="#ffffff"
+                    android:background="#3498DB"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

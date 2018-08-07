@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Login.LoginActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#19BC9B">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_below="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/login_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sopt_image"
+                android:scaleType="fitXY"/>
+            <EditText
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:id="@+id/login_id"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="아이디"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"/>
+            <EditText
+                android:layout_marginTop="30dp"
+                android:inputType="textPassword"
+                android:id="@+id/login_password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="비밀번호"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"/>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/login_ok_btn"
+                        android:text="로그인"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:background="#3498DB"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/login_sign_btn"
+                        android:text="회원가입"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#3498DB"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

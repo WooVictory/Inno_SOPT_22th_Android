@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.SignUp.SignUpActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/sign_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#3CB371">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:id="@+id/sign_id"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:hint="아이디"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_marginTop="30dp"
+            android:id="@+id/sign_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:hint="비밀번호"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/sign_ok_btn"
+                android:text="회원가입"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
