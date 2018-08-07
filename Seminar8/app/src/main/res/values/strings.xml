@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Seminar8</string>
+    <string name="facebook_app_id">230537000873778</string>
+    <!--앱 이름은 facebook_app_id 말고 다른거 해도됨-->
+    <string name="fb_login_protocol_scheme">fb230537000873778</string>
+    <!--버전이 오레오 이상으로 넘어가면서 스튜디오에서 인증하는 방식이 조금 바뀌어서 이렇게 해야 한다.-->
+</resources>
