@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mine_tab_popup"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#faf9fa"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/mine_tab_x_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/my_window_x"
+            android:layout_gravity="right"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      Instagram에 Facebook 친구초대하기\n 아직 Instagram을 사용하지 않는 친구 n명을\n         확인하고 초대할 친구를 확인하세요"
+            android:layout_gravity="center_horizontal"/>
+        
+        <Button
+            android:id="@+id/mine_tab_invite_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:text="친구 초대하기"
+            android:textSize="12dp"
+            android:background="#066CFF"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e2e3e3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="54dp"
+                android:layout_height="54dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pic1"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="#5395e9"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VictoryWoo"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="게시물"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:gravity="center"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="팔로워 "
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="팔로잉"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="165 "
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="프로필 수정"
+                android:layout_gravity="center_horizontal"
+                android:textSize="13sp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e2e3e3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:background="#faf9fa">
+
+        <ImageView
+            android:id="@+id/mine_tab_all_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/my_all_off"/>
+        <ImageView
+            android:id="@+id/mine_tab_align_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/my_align_off"/>
+        <ImageView
+            android:id="@+id/mine_tab_tag_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/my_tag_off"/>
+        <ImageView
+            android:id="@+id/mine_tab_save_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/my_save_off"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mine_tab_frame"/>
+
+
+</LinearLayout>
