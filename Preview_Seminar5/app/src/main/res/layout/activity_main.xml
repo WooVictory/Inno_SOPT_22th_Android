@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/main_play_heart"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/play_heart"/>
+
+        <ImageView
+            android:id="@+id/main_play_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_dotdotdot_more"
+            android:layout_toLeftOf="@+id/main_play_search"
+            android:layout_marginRight="2dp"/>
+
+        <ImageView
+            android:layout_marginRight="16dp"
+            android:id="@+id/main_play_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_search"
+            android:layout_alignParentRight="true"/>
+        
+        <TextView
+            android:id="@+id/main_play_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알잖아"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#313131"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:id="@+id/main_play_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OuiOui(위위)"
+            android:textColor="#525252"
+            android:layout_below="@+id/main_play_song_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:textSize="14dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/main_play_song_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03:59"
+            android:textSize="12dp"
+            android:textColor="#808080"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="287dp"
+            android:src="@drawable/play_music_album"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"/>
+
+        <io.netopen.hotbitmapgg.library.view.RingProgressBar
+            android:layout_marginTop="8dp"
+            android:id="@+id/RingprogressBar"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_centerInParent="true"
+            app:style="STROKE"
+            app:max="1000"
+            app:ringWidth="10dp"
+            app:ringColor="#D3D3D3"
+            app:textIsShow="false"
+            app:ringProgressColor="#8453FF"/>
+
+    </RelativeLayout>
+
+    
+        <RelativeLayout
+            android:layout_marginTop="38dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginRight="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/main_play_stop"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/play_back"/>
+            
+            <ImageView
+                android:id="@+id/main_play_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play_stop"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:layout_marginLeft="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/main_play_stop"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/play_next"/>
+            
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/play_sound"/>
+
+        <ImageView
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/play_list"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/main_play_another_song_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="'OuiOui의 다른곡 보기"
+            android:textColor="#969696"
+            android:textSize="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/play_more_arrow" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
