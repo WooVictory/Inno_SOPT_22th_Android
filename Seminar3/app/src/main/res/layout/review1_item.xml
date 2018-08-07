@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal">
+    
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/review1_bus_num_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5515"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/review1_bus_location_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[서울]지선버스"
+                android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp">
+
+        <ImageView
+            android:id="@+id/review1_bus_color_item"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

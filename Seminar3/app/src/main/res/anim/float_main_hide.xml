@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--돌아가면서 바뀜 즉 회전-->
+
+
+    <rotate
+        android:duration = "200"
+        android:interpolator = "@android:anim/linear_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromDegrees="-45"
+        android:toDegrees="0"
+        />
+
+    <!--
+    50% 50%은 중심점을 의미하고
+    -45~0도 방향으로 돌리는 것
+
+    -->
+</set>

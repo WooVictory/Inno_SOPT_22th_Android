@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Review1.ProfileActivity">
+
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profile_imageView"
+        android:src="@color/colorAccent"/>
+    <TextView
+        android:id="@+id/profile_chattingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/profile_imageView"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+
+    <translate
+        android:duration = "200"
+        android:interpolator = "@android:anim/linear_interpolator"
+        android:fromYDelta="-240%"
+        android:toXDelta="0%"
+        android:toYDelta="0%"
+        />
+    <!--투명 상태 관리-->
+    <alpha
+        android:duration = "100"
+        android:interpolator = "@android:anim/accelerate_interpolator"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0"
+        />
+    <!--%의 의미 : from가지고 부모 뷰의 몇 퍼센트 움직이는지 결정하는 것!-->
+
+</set>

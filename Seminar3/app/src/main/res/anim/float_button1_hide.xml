@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+
+    <translate
+        android:duration = "200"
+        android:interpolator = "@android:anim/linear_interpolator"
+        android:fromYDelta="-120%"
+        android:toXDelta="0%"
+        android:toYDelta="0%"
+        />
+    <!--투명 상태 관리-->
+    <alpha
+        android:duration = "100"
+        android:interpolator = "@android:anim/accelerate_interpolator"
+        android:fromAlpha="1.0"
+        android:toAlpha=".0"
+        />
+
+
+</set>

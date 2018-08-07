@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+
+    <Button
+        android:layout_marginTop="180dp"
+        android:id="@+id/three_seminar_review1_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="복습"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/three_seminar_review2_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="응용 및 심화"
+        android:textSize="15dp"/>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
